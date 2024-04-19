@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'ls -lrth'
-                sh 'npm install -force'
+                sh 'npm -version'
                 sh 'npm run build'
             }
         }
