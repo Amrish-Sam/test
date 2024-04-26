@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'ls -lrth'
                 sh 'npm -version'
+                sh 'npm install -force'
                 sh 'npm run build'
             }
         }
